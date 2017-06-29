@@ -19,8 +19,4 @@ export class EventListComponent{
             country: 'New Zealand'
         }
     }
-
-    handleEventClicked(data){
-        console.log('recieved: ', data)
-    }
 }
