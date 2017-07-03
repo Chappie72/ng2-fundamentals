@@ -12,8 +12,10 @@ import { ActivatedRoute } from "@angular/router";
 })
 
 export class EventDetailsComponent implements OnInit {
-    event:any
-    addMode:boolean
+    event: any
+    addMode: boolean
+    filterBy: string = 'all'
+
     constructor(private eventService: EventService, private route: ActivatedRoute) { }
 
     ngOnInit() { 
@@ -35,4 +37,6 @@ export class EventDetailsComponent implements OnInit {
     cancelNewSession() {
         this.addMode = false
     }
+
+    
 }
